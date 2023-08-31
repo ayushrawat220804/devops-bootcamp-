@@ -17,7 +17,7 @@ export async function fetchMetadata() {
 (function () {
   var stripFrontMatter = function (hook, _vm) {
     // Invoked on each page load before new markdown is transformed to HTML.
-    // Supports asynchronous tasks (see beforeEach documentation for details).
+    // Supports asynchronous tasks okk now -› (see beforeEach documentation for details).
     hook.beforeEach(function (markdown) {
       const { data, content } = matter(markdown);
 
