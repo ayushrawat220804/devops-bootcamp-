@@ -49,17 +49,17 @@ docs/2-Github/2.2-Actions.md:
     - name: Augment basic workflow
       description: >-
         Take a basic workflow and update it to include a few common things
-        you'll see inside Github Actions
+        you'll see inside GitHub Actions
       estMinutes: 60
       technologies:
-        - Github Actions
+        - GitHub Actions
     - name: Going Deeper
       description: >-
         Take the newly improved workflow and use different methods to achieve
         the same thing.  Introduces new important concepts/actions
       estMinutes: 120
       technologies:
-        - Github Actions
+        - GitHub Actions
     - name: Consolidate what we have and make it reusable
       description: >-
         Now we go one step further and take one of our jobs and make it into a
@@ -67,25 +67,25 @@ docs/2-Github/2.2-Actions.md:
         reusable version
       estMinutes: 240
       technologies:
-        - Github Actions
+        - GitHub Actions
 docs/2-Github/2.3-Projects.md:
   category: Agile Development
   estReadingMinutes: 5
   exercises:
     - name: Create your own Project
       description: >-
-        Play around with Github Projects and get used to using its many features
+        Play around with GitHub Projects and get used to using its many features
         and interfaces to organize your work.
       estMinutes: 80
       technologies:
-        - Github Projects
+        - GitHub Projects
 docs/2-Github/2.4-APIs.md:
   category: Fundamentals
   estReadingMinutes: 30
   exercises:
-    - name: Interact with Github using its two available APIs
+    - name: Interact with GitHub using its two available APIs
       description: >-
-        Create and retrieve resources in Github using the REST and GraphQL
+        Create and retrieve resources in GitHub using the REST and GraphQL
         APIs.  Get some experience using them and compare the two approaches.
       estMinutes: 180
       technologies:
@@ -101,19 +101,19 @@ docs/2-Github/2.5-Security.md:
         Security tab
       estMinutes: 30
       technologies:
-        - Github Security
+        - GitHub Security
     - name: Dependabot
       description: 'Setup dependabot alerts, version and security updates'
       estMinutes: 20
       technologies:
-        - Github Security
+        - GitHub Security
     - name: Code-scanning
       description: >-
         Setup secret-scanning in your own repository and see how it prevents you
         from committing secrets
       estMinutes: 20
       technologies:
-        - Github Security
+        - GitHub Security
 docs/3-virtual-machines-containers/3.1-golden-images.md:
   category: Virtualization
   estReadingMinutes: 15
@@ -404,7 +404,7 @@ docs/4-cloud-computing/4.3.3-vmss.md:
         Create a VMSS and serve content from an Azure Storage Account. Do this
         via the cli, deploying a simple node web app and provision the VM's with
         cloud-init.
-      estMinutes: 240
+      estMinutes: 330
       technologies:
         - Azure
         - Azure VMSS
@@ -433,7 +433,7 @@ docs/4-cloud-computing/4.3.5-aci.md:
       description: >-
         Create a docker image for your Node application. Push your image into
         ACR. Then deploy your image via ACI.
-      estMinutes: 300
+      estMinutes: 360
       technologies:
         - Azure
         - Azure Container Instances (ACI)
@@ -454,6 +454,17 @@ docs/4-cloud-computing/4.3.6-aks.md:
         - Azure Kubernetes Service (AKS)
         - Azure Container Registry (ACR)
         - Node.js
+docs/4-cloud-computing/4.3.7-app-service.md:
+  category: Cloud Computing
+  estReadingMinutes: 10
+  exercises:
+    - name: Deploy Simple Web Application to App Service
+      description: Create A Web App and Scale and Monitor
+      estMinutes: 240
+      technologies:
+        - Azure
+        - Azure App Service
+        - Azure CLI
 docs/5-software-development-practices/5.1-overview.md:
   category: Agile Development
   estReadingMinutes: 90
@@ -567,6 +578,9 @@ docs/5-software-development-practices/5.5.6-sonarqube.md:
       technologies:
         - SonarQube
         - GitHub Actions
+docs/5-software-development-practices/5.5.7-code-review.md:
+  category: Software Quality
+  estReadingMinutes: 10
 docs/5-software-development-practices/5.6-hello-devops.md:
   category: Agile Development
   estReadingMinutes: 5
@@ -780,8 +794,8 @@ docs/7-infrastructure-configuration-management/7.1.4-terraform-providers.md:
       technologies:
         - Terraform
         - Go
-    - name: Implementing the provider
-      description: Implement the Terraform provider to interact with a custom API.
+    - name: Implementing the provider client
+      description: Implement the Terraform provider client to interact with a custom API.
       estMinutes: 240
       technologies:
         - Terraform
@@ -792,17 +806,17 @@ docs/7-infrastructure-configuration-management/7.1.4-terraform-providers.md:
       technologies:
         - Terraform
         - Go
-    - name: 'Implementing Dev, Ops, DevOps resource and datasource'
-      description: >-
-        Implement the CRUD operations for the Dev, Ops, and DevOps resources and
-        datasources.
-      estMinutes: 300
+    - name: Testing
+      description: Write comprehensive tests for the Engineer resource and datasource.
+      estMinutes: 120
       technologies:
         - Terraform
         - Go
-    - name: Challenge
-      description: Write comprehensive tests for the Engineer resource and datasource.
-      estMinutes: 120
+    - name: Implementing Dev or Ops resource and datasource
+      description: >-
+        Implement the CRUD operations for the Dev or Ops resources and
+        datasources.
+      estMinutes: 300
       technologies:
         - Terraform
         - Go
@@ -814,6 +828,15 @@ docs/7-infrastructure-configuration-management/7.2-ansible.md:
       description: >-
         Provision a virtual machine and install a GitHub self-hosted runner
         using Ansible as a provisioner in Vagrant.
+      estMinutes: 300
+      technologies:
+        - Ansible
+        - Vagrant
+        - GitHub self-hosted runner
+    - name: Idempotency
+      description: >-
+        Provision a virtual machine and install a GitHub self-hosted runner
+        using Ansible as a provisioner in Vagrant while maintaining idempotency.
       estMinutes: 300
       technologies:
         - Ansible
@@ -1014,7 +1037,7 @@ Welcome! You must be here because you're interested in DevOps. Don't worry, we'l
 
 ## Target Audience
 
-This DevOps Bootcamp is used as an introduction to DevOps for Liatrio's apprentices. Therefore, there are deliverables at the end of each section that help guide the apprentices' training. However, anyone can go through the DevOps Bootcamp. Feel free to ignore the deliverables, etc. This bootcamp also assumes the bootcamper is using a Mac for the deliverables.
+This DevOps Bootcamp is used as an introduction to DevOps for Liatrio's apprentices. Therefore, there are deliverables at the end of each section and knowledge checks sprinkled throughout that help guide the apprentices' training. However, anyone can go through the DevOps Bootcamp. Feel free to ignore the deliverables, knowledge checks, etc. This bootcamp also assumes the bootcamper is using a Mac for the deliverables.
 
 ## Disclaimer
 
@@ -1022,26 +1045,45 @@ This bootcamp alone will by no means make anyone an expert on DevOps; that's whe
 
 ## Learning Goals
 
- 1. Introduction to DevOps
- 2. Virtual Machines and Containers
- 3. Cloud Computing
- 4. Development Practices
- 5. Release Management
- 6. Automation and Orchestration
- 7. Kubernetes
+1. Introduction to DevOps
+2. GitHub
+3. Virtual Machines and Containers
+4. Cloud Computing
+5. Development Practices
+6. Release Management
+7. Infrastructure and Configuration
+8. Kubernetes
+
+<canvas id="technology-word-cloud"></canvas>
 
 <canvas id="category-doughnut-canvas"></canvas>
 
 ## Expectations
 
- 1. Share what you learn. Knowledge is best retained when you can teach it back yourself.
- 2. If you're participating in the bootcamp with others, lift them up instead of speeding past them.
- 3. Your learning should be in a demonstrable state at any given time.
- 4. Slow and steady wins the race. If you don't fully understand something, speak up for help and spend more time on it.
- 5. Be transparent in your progress.
- 6. Have fun!
+1. Share what you learn. Knowledge is best retained when you can teach it back yourself.
+2. If you're participating in the bootcamp with others, lift them up instead of speeding past them.
+3. Your learning should be in a demonstrable state at any given time.
+4. Slow and steady wins the race. If you don't fully understand something, speak up for help and spend more time on it.
+5. Be transparent in your progress.
+6. Have fun!
 
 > "It's better to over communicate than to under communicate."
+
+## Deliverable and Knowledge Check Format
+
+**Deliverables**
+
+If you are an apprentice (or if you just want to add to your learning), here's a little insight on the deliverables the bootcamp will provide. At the end of each section, you will typically encounter a bulleted list of deliverables. They will usually be structured to get you thinking/reflecting/researching key points that the section covered.
+
+**Knowledge Checks**
+
+As mentioned before, you'll also find small knowledge checks sprinkled throughout the bootcamp. Don't worry, they aren't graded and scores aren't tracked, so there's zero pressure when it comes to them. That being said, they are very valuable for learning, so it would be wise to take the time to not only get the correct answers on them, but to really understand *why* those are the correct answers.
+
+Here's a sample knowledge check to show you how they'll behave:
+
+<div class="quizdown">
+    <div id="landing-page-quiz.js" ></div>
+</div>
 
 ## Contributing
 
